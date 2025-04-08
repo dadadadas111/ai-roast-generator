@@ -53,6 +53,9 @@ roastBtn.onclick = async () => {
   const language = document.getElementById("languageSelect").value;
   if (!input) return;
 
+  // disable hidden output
+  output.style.display = "block";
+
   output.textContent = "Cooking up a roast...";
   lastInput = input;
 
