@@ -12,7 +12,7 @@ body {
 
 .container {
   flex: 1;
-  width: 500px;
+  width: 80%;
   margin: auto;
 }
 
@@ -38,10 +38,9 @@ button {
   color: white;
   border: none;
   cursor: pointer;
-  margin: 10px auto;
+  margin: 10px;
   border-radius: 5px;
   display: block;
-  width: 100%;
 }
 
 select {
@@ -51,7 +50,7 @@ select {
   border-radius: 5px;
   border: 1px solid #ccc;
   display: block;
-  width: 100%;
+  width: 100px;
   margin: 10px auto;
 }
 
@@ -97,11 +96,26 @@ input[type="range"] {
   margin: 10px 0;
 }
 
+/* Header adjustments */
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #222;
-  color: #fff;
   padding: 10px;
-  text-align: right;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+#languageSelect {
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 .github-link {
@@ -121,6 +135,27 @@ input[type="range"] {
   transform: scale(1.1);
 }
 
+/* Advanced settings icon button */
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.settings-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(200%) contrast(100%);
+  transition: transform 0.2s, filter 0.2s;
+}
+
+.settings-icon:hover {
+  transform: scale(1.1);
+  filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(360deg) brightness(150%) contrast(100%);
+}
 
 .footer {
   background: #222;
@@ -134,4 +169,53 @@ input[type="range"] {
 .footer-link {
   color: #e74c3c;
   text-decoration: none;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  textarea, input, button, select {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .modal-content {
+    max-width: 90%;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .github-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  textarea {
+    height: 60px;
+  }
+
+  .github-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
 }

@@ -29,7 +29,6 @@ async function updateLocalization(language) {
       document.querySelector("h1").textContent = translations.title;
       document.getElementById("userInput").placeholder = translations.placeholder;
       document.getElementById("roastBtn").textContent = translations.roastBtn;
-      document.getElementById("advancedSettingsBtn").textContent = translations.advancedSettingsBtn;
       document.querySelector("label[for='roastLevel']").textContent = translations.roastLevel;
       document.querySelector("label[for='humorLevel']").textContent = translations.humorLevel;
       document.querySelector("label[for='responseLength']").textContent = translations.responseLength;

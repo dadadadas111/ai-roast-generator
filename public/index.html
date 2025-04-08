@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>AI Roast Generator</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header class="header">
+    <div class="header-left">
+      <select id="languageSelect" data-lang="en">
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+        <option value="vi">Vietnamese</option>
+      </select>
+    </div>
     <a href="https://github.com/dadadadas111/ai-roast-generator" target="_blank" class="github-link">
-      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" class="github-icon">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub"
+        class="github-icon">
     </a>
   </header>
   <div class="container">
     <h1>AI Roast Generator 🔥</h1>
     <textarea id="userInput" placeholder="Enter your name + fun fact"></textarea>
-    <button id="roastBtn">Roast Me</button>
-    <select id="languageSelect" data-lang="en">
-      <option value="en">English</option>
-      <option value="es">Spanish</option>
-      <option value="fr">French</option>
-      <option value="vi">Vietnamese</option>
-    </select>
-    <button id="advancedSettingsBtn">Advanced Settings</button>
+    <span style="width: 100%; display: flex; justify-content: center; align-items: center; gap: 10px;">
+      <button id="roastBtn">Roast Me</button>
+      <button id="advancedSettingsBtn" class="icon-btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/2099/2099058.png" alt="Settings" class="settings-icon">
+      </button>
+    </span>
+
     <div id="advancedSettingsModal" class="modal" style="display:none;">
       <div class="modal-content">
         <h2>Advanced Settings</h2>
@@ -37,7 +47,8 @@
     <p id="output" hidden class="markdown"></p>
   </div>
   <footer class="footer">
-    <p>© <span id="currentYear"></span> AI Roast Generator. Created by <a href="https://github.com/dadadadas111" target="_blank" class="footer-link">dadadadas111</a>.</p>
+    <p>© <span id="currentYear"></span> AI Roast Generator. Created by <a href="https://github.com/dadadadas111"
+        target="_blank" class="footer-link">dadadadas111</a>.</p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="script.js"></script>
@@ -45,4 +56,5 @@
     document.getElementById('currentYear').textContent = new Date().getFullYear();
   </script>
 </body>
+
 </html>
