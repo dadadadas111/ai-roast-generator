@@ -1,0 +1,42 @@
+{
+  "en": {
+    "title": "AI Roast Generator 🔥",
+    "placeholder": "Enter your name + fun fact",
+    "roastBtn": "Roast Me",
+    "advancedSettingsBtn": "Advanced Settings",
+    "roastLevel": "Roast Level:",
+    "humorLevel": "Humor Level:",
+    "responseLength": "Response Length:",
+    "closeSettingsBtn": "Close"
+  },
+  "es": {
+    "title": "Generador de Burlas AI 🔥",
+    "placeholder": "Ingresa tu nombre + dato curioso",
+    "roastBtn": "Búrlate de mí",
+    "advancedSettingsBtn": "Configuración Avanzada",
+    "roastLevel": "Nivel de Burla:",
+    "humorLevel": "Nivel de Humor:",
+    "responseLength": "Longitud de Respuesta:",
+    "closeSettingsBtn": "Cerrar"
+  },
+  "fr": {
+    "title": "Générateur de Moqueries IA 🔥",
+    "placeholder": "Entrez votre nom + fait amusant",
+    "roastBtn": "Moque-moi",
+    "advancedSettingsBtn": "Paramètres Avancés",
+    "roastLevel": "Niveau de Moquerie:",
+    "humorLevel": "Niveau d'Humour:",
+    "responseLength": "Longueur de Réponse:",
+    "closeSettingsBtn": "Fermer"
+  },
+  "vi": {
+    "title": "AI Chế Nhạo 🔥",
+    "placeholder": "Nhập tên của bạn + sự thật thú vị",
+    "roastBtn": "Chế Nhạo",
+    "advancedSettingsBtn": "Cài Đặt Nâng Cao",
+    "roastLevel": "Mức Độ Lót Tích:",
+    "humorLevel": "Mức Độ Hài Hước:",
+    "responseLength": "Độ Dài Phản Hồi:",
+    "closeSettingsBtn": "Đóng"
+  }
+}

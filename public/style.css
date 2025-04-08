@@ -1,0 +1,137 @@
+body {
+  font-family: sans-serif;
+  background: #222222;
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+
+.container {
+  flex: 1;
+  width: 500px;
+  margin: auto;
+}
+
+input, button {
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+button {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 10px auto;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+}
+
+select {
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+}
+
+#output {
+  margin-top: 30px;
+  font-style: italic;
+  text-align: left;
+  background: #222;
+  padding: 15px;
+  border-radius: 5px;
+  white-space: pre-wrap;
+}
+
+.markdown {
+  font-family: monospace;
+  color: #e6e6e6;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  color: #fff;
+  max-width: 400px;
+  width: 100%;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.header {
+  background: #222;
+  color: #fff;
+  padding: 10px;
+  text-align: right;
+}
+
+.github-link {
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+.github-icon {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.github-icon:hover {
+  transform: scale(1.1);
+}
+
+
+.footer {
+  background: #222;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;
+  height: 5vh;
+}
+
+.footer-link {
+  color: #e74c3c;
+  text-decoration: none;
+}

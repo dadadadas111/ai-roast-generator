@@ -1,0 +1,15 @@
+{
+  "name": "ai-roast-generator",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.18.0",
+    "openai": "^4.0.0",
+    "axios": "^1.4.0"
+  }
+}
